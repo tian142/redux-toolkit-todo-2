@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-const initialState = ["dis me to do ainit", "dis another do to"]
+const initialState = []
 
 const todoSlice = createSlice({
   name: "todo",
