@@ -10,7 +10,7 @@ const todoSlice = createSlice({
       state.push(action.payload)
     },
     deleteTodo: (state, action) => {
-      state.slice(action.payload, 1)
+      state.splice(action.payload, 1)
     },
   },
 })
