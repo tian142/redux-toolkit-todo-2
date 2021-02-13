@@ -1,9 +1,12 @@
 import "./App.css"
+import { ToDoInput } from "./features/todo/ToDoInput"
+import { ToDoList } from "./features/todo/ToDoList"
 
 function App() {
   return (
     <div className="App">
-      <h1>ToDo App</h1>
+      <ToDoInput />
+      <ToDoList />
     </div>
   )
 }
