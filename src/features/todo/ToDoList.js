@@ -1,10 +1,22 @@
 import React from "react"
 
+import { useSelector } from "react-redux"
+
 export const ToDoList = () => {
+  const todos = useSelector((state) => state.todo)
+
+  const mapToDos = todos.map((todo, index) => (
+    <article>
+      <div>
+        <span className="spandis">{todo}</span>
+        <button>Complete</button>
+      </div>
+    </article>
+  ))
+
   return (
     <div>
-      <p>to do 1</p>
-      <p>to do 2</p>
+      <p>{mapToDos}</p>
     </div>
   )
 }
